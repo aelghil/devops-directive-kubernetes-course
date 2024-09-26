@@ -52,3 +52,4 @@ After installing the dependencies, `task client-react:run` will use vite to run 
 This service uses poetry to manage dependencies. You will need to install the dependencies with `task load-generator-python:install`.
 
 After installing the dependencies, `task load-generator-python:run` will run the application.
+....
