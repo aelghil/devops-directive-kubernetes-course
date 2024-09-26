@@ -114,5 +114,5 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           base: main
-          token: ${{ secrets.k8s-PAT }}
+          token: ${{ secrets.K8S_PAT }}
           title: "Update image tags to (${{ needs.generate-image-tag.outputs.image_tag }})"
