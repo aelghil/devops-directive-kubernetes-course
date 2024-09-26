@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: load-generator
-          image: sidpalas/devops-directive-kubernetes-course-load-generator-python:foobarbaz
+          image: ahelghilani/k8s-load-generator-python:foobarbaz
           imagePullPolicy: Always
           env:
             - name: API_URL
@@ -37,8 +37,8 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false
             privileged: false
-      imagePullSecrets:
-        - name: dockerconfigjson
+      #imagePullSecrets:
+      #  - name: dockerconfigjson
       securityContext:
         seccompProfile:
           type: RuntimeDefault
